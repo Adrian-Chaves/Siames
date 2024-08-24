@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton+SC&family=Ga+Maamli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Abel", sans-serif;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar-nav .nav-link {
+    color: #F5FBEF; /* Cambia el color del texto a blanco */
+}
+
+.navbar .nav-link:hover {
+    color: #590925; /* Opcional: Cambia el color al pasar el mouse */
+    text-decoration: underline; /* Subrayado al apuntar con el mouse */
+}
+
+.navbar-nav .nav-link.active {
+    color: #171D1C;
+}
+
+.color_navbar {
+    background-color: #D05353;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que la navbar quede encima de otros elementos */
+}
+
+body {
+    background-color: #191919;
+}
+
+.fondo {
+    background-image: url("../imagenes/fondo_inicio.jpg");
+    height: 90vh;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Opcional: Ajusta la imagen para cubrir todo el área del elemento */
+    background-position: center; /* Centra la imagen dentro del elemento */
+}
+/*productos*/
+
+.tarjetitas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: #F5FBEF;
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjeta_imagen {
+    max-width: 300px;
+}
+
+h1 {
+    color: #F5FBEF;
+}
+
+h2 {
+    color: #F5FBEF;
+}
+
+/* Quiénes somos */
+
+.contenedor {
+    display: grid;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100vh; /* Ocupa todo el alto disponible */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "..... ..... ..... ..... caja2 caja2 caja2 caja2"
+    "..... caja1 caja1 ..... caja2 caja2 caja2 caja2"
+    "..... caja1 caja1 ..... caja2 caja2 caja2 caja2"
+    "..... ..... ..... ..... caja2 caja2 caja2 caja2";
+}
+
+p {
+    color: #F5FBEF;
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+    width: 100%;
+    background-image: url("../imagenes/nosotros.jpg");
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Opcional: Ajusta la imagen para cubrir todo el área del elemento */
+    background-position: center; /* Centra la imagen dentro del elemento */
+}
