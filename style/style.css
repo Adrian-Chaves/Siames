@@ -110,3 +110,36 @@ p {
     background-size: cover; /* Opcional: Ajusta la imagen para cubrir todo el área del elemento */
     background-position: center; /* Centra la imagen dentro del elemento */
 }
+
+/* Arte */
+
+img {
+    width: 100%;
+}
+
+.fila {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.columna {
+    flex: 20%;
+    padding: 5px;
+}
+
+.columna img {
+    margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+    .columna {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .columna {
+        flex: 100%;
+    }
+}
