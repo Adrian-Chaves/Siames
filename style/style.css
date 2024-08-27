@@ -183,6 +183,10 @@ img {
     .columna {
         flex: 50%;
     }
+
+    .caja2 {
+        background-image: url('../imagenes/arte15.jpg');
+    }
 }
 
 /* Para pantallas pequeñas (móviles) */
@@ -193,5 +197,8 @@ img {
     }
     .columna {
         flex: 100%;
+    }
+    .caja2 {
+        background-image: url('../imagenes/arte6.jpg');
     }
 }
