@@ -38,13 +38,6 @@ body {
     background-color: #191919;
 }
 
-.fondo {
-    background-image: url("../imagenes/fondo_inicio.jpg");
-    height: 90vh;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-}
 /*productos*/
 
 .tarjetitas {
