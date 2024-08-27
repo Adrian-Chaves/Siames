@@ -38,6 +38,17 @@ body {
     background-color: #191919;
 }
 
+/* Inicio */
+
+.fondo {
+    background-image: url('../imagenes/fondo_inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
 /*productos*/
 
 .tarjetitas {
@@ -164,13 +175,22 @@ img {
     margin-top: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 890px) {
+    .fondo {
+        background-image: url('../imagenes/arte9.jpg'); /* Opcional: puedes usar una versión optimizada para tablets */
+        height: 100vh; /* O bien, usa una altura diferente si es necesario */
+    }
     .columna {
         flex: 50%;
     }
 }
 
-@media (max-width: 600px) {
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 450px) {
+    .fondo {
+        background-image: url('../imagenes/arte17.jpg'); /* Opcional: imagen optimizada para móviles */
+        height: 100vh; /* Mantén la altura completa o ajústala según sea necesario */
+    }
     .columna {
         flex: 100%;
     }
