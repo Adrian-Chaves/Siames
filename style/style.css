@@ -104,13 +104,14 @@ h2 {
 .caja1 {
     grid-area: caja1;
     text-align: center;
-    padding-top: 30%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .caja2 {
     grid-area: caja2;
     width: 100%;
-    background-image: url("../imagenes/nosotros.jpg");
+    background-image: url("../imagenes/arte14.jpg");
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
@@ -184,8 +185,18 @@ img {
         flex: 50%;
     }
 
+    .contenedor {
+        grid-template-areas:
+        "caja1 caja1"
+        "caja2 caja2";
+    }
+
+    .caja1 {
+        padding-top: 40px;
+    }
+
     .caja2 {
-        background-image: url('../imagenes/arte15.jpg');
+        background-image: url('../imagenes/arte16.jpg');
     }
 }
 
@@ -195,9 +206,22 @@ img {
         background-image: url('../imagenes/arte17.jpg'); /* Opcional: imagen optimizada para móviles */
         height: 100vh; /* Mantén la altura completa o ajústala según sea necesario */
     }
+
     .columna {
         flex: 100%;
     }
+
+    .contenedor {
+        grid-template-areas:
+        "caja1 caja1"
+        "caja2 caja2";
+    }
+
+    .caja1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .caja2 {
         background-image: url('../imagenes/arte6.jpg');
     }
