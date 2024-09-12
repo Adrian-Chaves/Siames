@@ -1,0 +1,50 @@
+@media (max-width: 890px) {
+    .fondo {
+        background-image: url('../imagenes/arte9.jpg'); // Opcional: versión optimizada para tablets
+        height: 100vh; // O ajusta la altura si es necesario
+    }
+
+    .columna {
+        flex: 50%;
+    }
+
+    .contenedor {
+        grid-template-areas:
+            "caja1 caja1"
+            "caja2 caja2";
+    }
+
+    .caja1 {
+        padding-top: 40px;
+    }
+
+    .caja2 {
+        background-image: url('../imagenes/arte16.jpg');
+    }
+}
+
+@media (max-width: 450px) {
+    .fondo {
+        background-image: url('../imagenes/arte17.jpg'); // Opcional: imagen optimizada para móviles
+        height: 100vh; // Mantén la altura completa o ajústala según sea necesario
+    }
+
+    .columna {
+        flex: 100%;
+    }
+
+    .contenedor {
+        grid-template-areas:
+            "caja1 caja1"
+            "caja2 caja2";
+    }
+
+    .caja1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .caja2 {
+        background-image: url('../imagenes/arte6.jpg');
+    }
+}

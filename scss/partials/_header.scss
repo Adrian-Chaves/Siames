@@ -1,0 +1,31 @@
+header {
+    background-color: $color_nav;
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        .logo {
+            width: 100px;
+        }
+
+        .nav-link {
+            color: #F5FBEF;
+
+            &:hover {
+                color: #590925;
+                text-decoration: underline;
+                transition: color 0.3s ease;
+            }
+
+            &.active {
+                color: #171D1C;
+            }
+        }
+    }
+
+    .color_navbar {
+        background-color: #D05353;
+    }
+}

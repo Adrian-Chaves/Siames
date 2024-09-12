@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Anton+SC&family=Ga+Maamli&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+*::selection {
+  background-color: black;
+  color: blue;
+}
+
+body {
+  background-color: #191919;
+}
+
+.color {
+  color: #F5FBEF;
+}
+
+header {
+  background-color: #D05353;
+}
+header .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .navbar .logo {
+  width: 100px;
+}
+header .navbar .nav-link {
+  color: #F5FBEF;
+}
+header .navbar .nav-link:hover {
+  color: #590925;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+header .navbar .nav-link.active {
+  color: #171D1C;
+}
+header .color_navbar {
+  background-color: #D05353;
+}
+
+.tarjetitas {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 30px;
+}
+.tarjetitas .tarjetita {
+  background-color: #F5FBEF;
+  border-radius: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tarjetitas .tarjetita .informacion {
+  padding: 0 20px 20px 20px;
+}
+.tarjetitas .tarjetita .tarjeta_imagen {
+  max-width: 300px;
+}
+
+h1, h2 {
+  color: #F5FBEF;
+}
+
+.pantalla {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  /* Estilos para el carrusel */
+}
+.pantalla #carouselExampleFade {
+  width: 100%;
+  height: 100%;
+}
+.pantalla #carouselExampleFade .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.pantalla #carouselExampleFade .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pantalla #carouselExampleFade .carousel-inner .carousel-item iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.fila {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.fila .columna {
+  flex: 20%;
+  padding: 5px;
+}
+.fila .columna img {
+  margin-top: 5px;
+}
+
+@media (max-width: 890px) {
+  .fondo {
+    background-image: url("../imagenes/arte9.jpg");
+    height: 100vh;
+  }
+  .columna {
+    flex: 50%;
+  }
+  .contenedor {
+    grid-template-areas: "caja1 caja1" "caja2 caja2";
+  }
+  .caja1 {
+    padding-top: 40px;
+  }
+  .caja2 {
+    background-image: url("../imagenes/arte16.jpg");
+  }
+}
+@media (max-width: 450px) {
+  .fondo {
+    background-image: url("../imagenes/arte17.jpg");
+    height: 100vh;
+  }
+  .columna {
+    flex: 100%;
+  }
+  .contenedor {
+    grid-template-areas: "caja1 caja1" "caja2 caja2";
+  }
+  .caja1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .caja2 {
+    background-image: url("../imagenes/arte6.jpg");
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

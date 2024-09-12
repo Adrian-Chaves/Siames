@@ -1,0 +1,34 @@
+.pantalla {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    /* Estilos para el carrusel */
+    #carouselExampleFade {
+        width: 100%;
+        height: 100%;
+
+        .carousel-inner {
+            width: 100%;
+            height: 100%;
+
+            .carousel-item {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

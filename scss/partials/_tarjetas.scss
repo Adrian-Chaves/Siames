@@ -1,0 +1,27 @@
+.tarjetitas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 30px;
+
+    .tarjetita {
+        background-color: $color_tarjetas;
+        border-radius: 1em;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .informacion {
+            padding: 0 20px 20px 20px;
+        }
+
+        .tarjeta_imagen {
+            max-width: 300px;
+        }
+    }
+}
+
+h1, h2 {
+    color: $color_tarjetas;
+}
