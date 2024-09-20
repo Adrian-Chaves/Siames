@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "concierto1 concierto1 concierto2 concierto3 concierto6"
+    "concierto1 concierto1 concierto4 concierto5 concierto7";
+    gap: 2rem;
+    align-items: center;
+
+.conciertos {
+    border-radius: 10px;
+    overflow: hidden;
+}
+}
+
+.grid_concierto1 {
+    grid-area: concierto1;
+}
+
+.grid_concierto2 {
+    grid-area: concierto2;
+}
+
+.grid_concierto3 {
+    grid-area: concierto3;
+
+}
+
+.grid_concierto4 {
+    grid-area: concierto4;
+}
+
+.grid_concierto5 {
+    grid-area: concierto5;
+}
+
+.grid_concierto6 {
+    grid-area: concierto6;
+}
+
+.grid_concierto7 {
+    grid-area: concierto7;
+}
+
+.flex {
+    display: flex;
+    object-fit: cover;  /* Asegura que la imagen mantenga su proporción dentro del círculo */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;     /* Centra las imágenes verticalmente */  
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.album {
+    width: 300px;  /* Ajusta el tamaño que quieras */
+    height: 300px; /* La altura debe ser igual al ancho para que sea un círculo */
+    border-radius: 50%;  /* Esto crea el círculo */
+    object-fit: cover;  /* Asegura que la imagen mantenga su proporción dentro del círculo */
+    
+}

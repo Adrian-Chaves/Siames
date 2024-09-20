@@ -3,6 +3,8 @@
     flex-wrap: wrap;
     padding: 60px;
     gap: 30px;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;     /* Centra las imágenes verticalmente */ 
 
     .tarjetita {
         background-color: $color_tarjetas;

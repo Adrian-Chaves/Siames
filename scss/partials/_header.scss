@@ -29,3 +29,9 @@ header {
         background-color: #D05353;
     }
 }
+
+.imagencarrusel {
+    width: 100%; /* O 1050px si prefieres un tamaño específico */
+    height: 550px; /* Ajusta el tamaño de altura que quieras */
+    object-fit: cover; /* Recorta la imagen para encajar en el contenedor sin deformarse */
+}

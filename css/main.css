@@ -12,7 +12,8 @@
 }
 
 body {
-  background-color: #191919;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(0deg, rgb(63, 94, 251) 0%, rgb(25, 25, 25) 50%);
 }
 
 .color {
@@ -45,6 +46,75 @@ header .color_navbar {
   background-color: #D05353;
 }
 
+.imagencarrusel {
+  width: 100%; /* O 1050px si prefieres un tamaño específico */
+  height: 550px; /* Ajusta el tamaño de altura que quieras */
+  object-fit: cover; /* Recorta la imagen para encajar en el contenedor sin deformarse */
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.grid {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "concierto1 concierto1 concierto2 concierto3 concierto6" "concierto1 concierto1 concierto4 concierto5 concierto7";
+  gap: 2rem;
+  align-items: center;
+}
+.grid .conciertos {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid_concierto1 {
+  grid-area: concierto1;
+}
+
+.grid_concierto2 {
+  grid-area: concierto2;
+}
+
+.grid_concierto3 {
+  grid-area: concierto3;
+}
+
+.grid_concierto4 {
+  grid-area: concierto4;
+}
+
+.grid_concierto5 {
+  grid-area: concierto5;
+}
+
+.grid_concierto6 {
+  grid-area: concierto6;
+}
+
+.grid_concierto7 {
+  grid-area: concierto7;
+}
+
+.flex {
+  display: flex;
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción dentro del círculo */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.album {
+  width: 300px; /* Ajusta el tamaño que quieras */
+  height: 300px; /* La altura debe ser igual al ancho para que sea un círculo */
+  border-radius: 50%; /* Esto crea el círculo */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción dentro del círculo */
+}
+
 .padre {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -53,6 +123,7 @@ header .color_navbar {
   grid-row-gap: 0px;
   justify-content: space-evenly;
   align-items: center;
+  gap: 10px;
 }
 
 .div1 {
@@ -81,8 +152,9 @@ header .color_navbar {
 
 .imagen {
   width: 50vw; /* 50% del ancho de la ventana */
-  height: 50vh; /* 50% de la altura de la ventana */
+  height: 100vh; /* 100% de la altura de la ventana */
   object-fit: cover; /* Ajusta la imagen sin distorsión */
+  border-radius: 20px;
 }
 
 .tarjetitas {
@@ -90,6 +162,8 @@ header .color_navbar {
   flex-wrap: wrap;
   padding: 60px;
   gap: 30px;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
 }
 .tarjetitas .tarjetita {
   background-color: #F5FBEF;
